@@ -4,7 +4,10 @@ const puppeteer = require('./puppeteer')
 
 let key = ''
 puppeteer().then((res) => {
+    console.log(res)
     key = res
+}).catch((err)=>{
+ console.log(err)
 })
 setInterval(() => {
     puppeteer().then((res) => {
