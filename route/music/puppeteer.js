@@ -13,7 +13,7 @@ module.exports = async () => {
     })
     await page.emulate(iPhone6);
     await page.goto('https://i.y.qq.com/v8/playsong.html?songmid=004geL9D0EnH32&ADTAG=myqq&from=myqq&channel=10007100');
-    await page.waitFor(2000)
+    await page.waitFor(3000)
     const url = await page.evaluate(() => {
         let src = document.getElementById('h5audio_media').src.match(/guid=(.+?)&uin/)
         
