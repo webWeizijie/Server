@@ -15,6 +15,7 @@
     "koa-router": "^7.4.0",
     "koa-static": "^5.0.0",
     "mongoose": "^5.2.6",
+    "puppeteer": "^1.6.2",
     "socket.io": "^2.1.1",
     "utility": "^1.14.0"
   }
