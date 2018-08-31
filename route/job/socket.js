@@ -12,4 +12,8 @@ module.exports = (io) => {
 
         })
     })
+    io.on('error', function (err) {
+      console.log("ignoring exception: " + err);
+    });
+
 }
