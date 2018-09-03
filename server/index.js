@@ -21,6 +21,6 @@ app.use(router.routes()).use(router.allowedMethods())
 
 const server = require('http').createServer(app.callback());
 const io = require('socket.io')(server);
-resgisetSocket(io)
+// resgisetSocket(io)
 
 server.listen(80);
