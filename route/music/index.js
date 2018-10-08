@@ -4,10 +4,9 @@ const puppeteer = require('./puppeteer')
 
 let key = ''
 puppeteer().then((res) => {
-    console.log(res)
     key = res
-}).catch((err)=>{
- console.log(err)
+}).catch((err) => {
+    console.log(err)
 })
 setInterval(() => {
     puppeteer().then((res) => {
@@ -59,6 +58,7 @@ module.exports = (router, app) => {
     })
 
     router.get(host + '/songUrl', async (ctx, next) => {
+        console.log(key,'key')
         ctx.body = `http://dl.stream.qqmusic.qq.com/C400||.m4a?guid=${key}&uin=0&fromtag=38`
     })
 

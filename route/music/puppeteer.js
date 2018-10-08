@@ -14,6 +14,6 @@ module.exports = async () => {
         return src[1]
     })
     await browser.close();
-
+    
     return url
 }
