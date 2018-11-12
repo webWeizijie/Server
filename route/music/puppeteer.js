@@ -9,7 +9,7 @@ module.exports = async () => {
     });
     const page = await browser.newPage();
     await page.emulate(iPhone6);
-    await page.goto('https://i.y.qq.com/v8/playsong.html?songmid=004geL9D0EnH32&ADTAG=myqq&from=myqq&channel=10007100', {
+    await page.goto('https://i.y.qq.com/v8/playsong.html?songmid=0003JXVx2PhDxM&ADTAG=myqq&from=myqq&channel=10007100', {
         waitUntil: 'networkidle2',
         timeout: 1000000
     });
