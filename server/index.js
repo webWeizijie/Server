@@ -23,4 +23,4 @@ const server = require('http').createServer(app.callback());
 // const io = require('socket.io')(server);
 // resgisetSocket(io)
 
-server.listen(80);
+server.listen(9000);
